@@ -1,7 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Homepage.css";
 
 const Homepage = () => {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate("/signup");
+  };
+
+  const handleViewTemplates = () => {
+    navigate("/templates");
+  };
+
   return (
     <section className="home-section">
       <div className="home-container">
@@ -15,8 +26,12 @@ const Homepage = () => {
           templates. Stand out in the job universe with Nebula AI CV Builder.
         </p>
         <div className="home-buttons">
-          <button className="btn-primary">Get Started Free</button>
-          <button className="btn-secondary">View Templates</button>
+          <button className="btn-primary" onClick={handleGetStarted}>
+            Get Started Free
+          </button>
+          <button className="btn-secondary" onClick={handleViewTemplates}>
+            View Templates
+          </button>
         </div>
       </div>
     </section>

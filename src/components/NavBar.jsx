@@ -17,7 +17,7 @@ const NavBar = () => {
           <Link to="/templates" className="nav-link">
             Templates
           </Link>
-          <Link to="/get-started" className="nav-cta-link">
+          <Link to="/signup" className="nav-cta-link">
             Get Started
           </Link>
         </div>
