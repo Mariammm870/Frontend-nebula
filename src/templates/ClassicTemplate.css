@@ -1,0 +1,638 @@
+.classic-template {
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  color: #000000;
+  width: 100%;
+  max-width: 1000px; /* Wider */
+  min-height: 1200px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 3rem 4rem;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+}
+
+/* Header - Clean and Professional */
+.template-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #000000;
+}
+
+.template-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 400; /* Thinner */
+  color: #000000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Personal Information Section - Minimal */
+.personal-info-section {
+  margin-bottom: 2rem;
+}
+
+.personal-info-section h2 {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.name-title {
+  margin-bottom: 1.5rem;
+}
+
+.full-name {
+  font-size: 1.8rem;
+  font-weight: 400; /* Thinner */
+  color: #000000;
+  margin: 0 0 0.25rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.job-title {
+  font-size: 1.1rem;
+  color: #666666;
+  font-weight: 300; /* Thinner */
+  margin: 0;
+  font-style: normal;
+}
+
+/* Contact Information - Clean single line */
+.contact-info-single-line {
+  margin-top: 1rem;
+}
+
+.contact-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: 300; /* Thinner */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 0.125rem 0;
+}
+
+.contact-item:not(:last-child)::after {
+  content: "|";
+  margin-left: 1.5rem;
+  color: #000000;
+  font-weight: 300;
+}
+
+/* Divider - Subtle */
+.divider {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 2rem 0;
+}
+
+/* Section Headers - Clean and minimal */
+.professional-summary h2,
+.work-experience h2,
+.education h2,
+.skills h2,
+.projects h2 {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Professional Summary - Clean */
+.professional-summary p {
+  color: #000000;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0;
+  font-weight: 300; /* Thinner */
+}
+
+/* Work Experience Section - Professional */
+.work-experience-item {
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.work-experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.25rem;
+}
+
+.work-position {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+}
+
+.work-dates {
+  color: #666666;
+  font-size: 0.9rem;
+  font-weight: 300; /* Thinner */
+  white-space: nowrap;
+}
+
+.work-company {
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.work-description {
+  color: #000000;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 300; /* Thinner */
+}
+
+.work-divider {
+  height: 1px;
+  background: #f0f0f0;
+  margin: 1.25rem 0;
+}
+
+/* Education Section - Clean */
+.education-item {
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.25rem;
+}
+
+.education-degree {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+}
+
+.education-dates {
+  color: #666666;
+  font-size: 0.9rem;
+  font-weight: 300; /* Thinner */
+}
+
+.education-institution {
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.education-description {
+  color: #000000;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 300; /* Thinner */
+}
+
+/* Skills Section - Minimal */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-item {
+  background: #f8f8f8;
+  color: #000000;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  font-weight: 300; /* Thinner */
+  border: 1px solid #e0e0e0;
+}
+
+.skill-level {
+  font-size: 0.75rem;
+  color: #666666;
+  margin-left: 0.5rem;
+}
+
+/* Projects Section - Clean */
+.project-item {
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.project-title {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.project-description {
+  color: #000000;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  font-weight: 300; /* Thinner */
+}
+
+.project-technologies,
+.project-link {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 300; /* Thinner */
+}
+
+.project-technologies strong,
+.project-link strong {
+  color: #000000;
+  font-weight: 600;
+}
+
+.project-link a {
+  color: #000000;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.project-link a:hover {
+  color: #666666;
+}
+
+.project-divider {
+  height: 1px;
+  background: #f0f0f0;
+  margin: 1.25rem 0;
+}
+
+/* Remove all gradients and colors */
+.classic-template {
+  background: #ffffff;
+}
+
+/* Ensure all text is black */
+.classic-template * {
+  color: #000000;
+}
+
+/* Thin font weights throughout */
+.classic-template h1,
+.classic-template h2,
+.classic-template h3 {
+  font-weight: 400;
+}
+
+.classic-template p,
+.classic-template span,
+.classic-template div {
+  font-weight: 300;
+}
+/* Header */
+.template-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid #667eea;
+}
+
+.template-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3748;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Personal Information Section */
+.personal-info-section {
+  margin-bottom: 2rem;
+}
+
+.personal-info-section h2 {
+  color: #2d3748;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.name-title {
+  margin-bottom: 1rem;
+}
+
+.full-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.job-title {
+  font-size: 1.2rem;
+  color: #667eea;
+  font-weight: 500;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Contact Information - Single Line */
+.contact-info-single-line {
+  margin-top: 1rem;
+}
+
+.contact-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #4a5568;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+
+.contact-item:not(:last-child)::after {
+  content: "•";
+  margin-left: 1.5rem;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+  margin: 2rem 0;
+}
+
+/* Professional Summary */
+.professional-summary h2 {
+  color: #2d3748;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.professional-summary p {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Education Section */
+.education h2 {
+  color: #2d3748;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.education-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.education-header strong {
+  font-size: 1.1rem;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.education-header span {
+  color: #718096;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.institution {
+  color: #667eea;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.education-item p {
+  color: #4a5568;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Skills Section */
+.skills h2 {
+  color: #2d3748;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-item {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
+}
+
+.skill-level {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.1rem 0.5rem;
+  border-radius: 10px;
+}
+/* Projects Section */
+.projects h2 {
+  color: #2d3748;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 10px;
+  border-left: 5px solid #667eea;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  color: #2d3748;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+.project-description {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.project-technologies,
+.project-link {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.project-technologies strong,
+.project-link strong {
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.project-link a {
+  color: #667eea;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.project-link a:hover {
+  text-decoration: underline;
+}
+
+.project-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 1.5rem 0;
+}
+
+/* Work Experience Section */
+.work-experience h2 {
+  color: #2d3748;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.experience-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 10px;
+  border-left: 5px solid #667eea;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.position {
+  font-size: 1.3rem;
+  color: #2d3748;
+  font-weight: 700;
+  margin: 0;
+}
+
+.experience-dates {
+  color: #718096;
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.company {
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.experience-description {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.experience-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 1.5rem 0;
+}
