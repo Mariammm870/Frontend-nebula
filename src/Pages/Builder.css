@@ -1,0 +1,222 @@
+.builder-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0;
+}
+
+.builder-content {
+  display: grid;
+  grid-template-columns: 380px 1fr; /* Even smaller left panel */
+  gap: 0;
+  height: calc(100vh - 70px);
+  max-width: none;
+  margin: 0;
+}
+
+.form-panel {
+  background: #f8fafc;
+  padding: 2rem;
+  overflow-y: auto;
+  border-right: 1px solid #e2e8f0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 380px; /* Slightly smaller */
+}
+
+.preview-panel {
+  background: #f5f7fa;
+  padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100%;
+  width: 100%;
+}
+
+.builder-container {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 0;
+}
+
+.builder-content {
+  display: grid;
+  grid-template-columns: 380px 1fr; /* Smaller left panel, wider right panel */
+  gap: 0;
+  height: calc(100vh - 70px);
+  max-width: none;
+  margin: 0;
+}
+
+/* Form Panel - Left Side */
+.form-panel {
+  background: #ffffff;
+  padding: 2rem;
+  overflow-y: auto;
+  border-right: 1px solid #e0e0e0;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Preview Panel - Right Side - Maximum width */
+.preview-panel {
+  background: #f5f5f5;
+  padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100%;
+  width: 100%;
+}
+/* Make the resume template even wider */
+.classic-template {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  line-height: 1.6;
+  color: #2d3748;
+  width: 100%;
+  max-width: 1000px; /* Even wider */
+  min-height: 1200px;
+  background: white;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  padding: 3rem 5rem; /* Even more padding */
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+/* Personal Information - Always Visible */
+.personal-info-always-visible {
+  margin-bottom: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info-always-visible .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.personal-info-always-visible .section-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+}
+
+.personal-info-always-visible .section-content {
+  padding: 1.5rem;
+}
+
+/* Preview Panel - Right Side */
+.preview-panel {
+  background: #ffffff;
+  padding: 3rem;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Add Section Styles */
+.add-section {
+  margin: 2rem 0;
+  position: relative;
+}
+
+.btn-add-section {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: #ffffff;
+  border: 2px dashed #cbd5e0;
+  border-radius: 12px;
+  color: #4a5568;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-add-section:hover {
+  background: #f7fafc;
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.section-options {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.section-options p {
+  margin-bottom: 1rem;
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.section-option {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.2s ease;
+}
+
+.section-option:last-child {
+  border-bottom: none;
+}
+
+.section-option:hover {
+  background: #f8fafc;
+  border-radius: 6px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.section-option input {
+  margin-right: 0.75rem;
+  transform: scale(1.1);
+}
+
+.section-option span {
+  font-size: 0.9rem;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+/* Scrollbar Styling */
+.form-panel::-webkit-scrollbar,
+.preview-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.form-panel::-webkit-scrollbar-track,
+.preview-panel::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.form-panel::-webkit-scrollbar-thumb,
+.preview-panel::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+}
+
+.form-panel::-webkit-scrollbar-thumb:hover,
+.preview-panel::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}

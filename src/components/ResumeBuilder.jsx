@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./ResumeBuilder.css";
 
 const ResumeBuilder = () => {
-  const [resumeData, setResumeData] = useState({
+  const [state, setState] = useState({
     personalInfo: {
       fullName: "",
       jobTitle: "",
@@ -22,7 +22,7 @@ const ResumeBuilder = () => {
 
   const handleInputChange = (section, field, value) => {
     if (section === "personalInfo") {
-      setResumeData((prev) => ({
+      setState((prev) => ({
         ...prev,
         personalInfo: {
           ...prev.personalInfo,
@@ -30,7 +30,7 @@ const ResumeBuilder = () => {
         },
       }));
     } else {
-      setResumeData((prev) => ({
+      setState((prev) => ({
         ...prev,
         [section]: value,
       }));
@@ -42,7 +42,7 @@ const ResumeBuilder = () => {
     if (file) {
       const reader = new FileReader();
       reader.onload = (event) => {
-        setResumeData((prev) => ({
+        setState((prev) => ({
           ...prev,
           personalInfo: {
             ...prev.personalInfo,
@@ -55,7 +55,7 @@ const ResumeBuilder = () => {
   };
 
   const addExperience = () => {
-    setResumeData((prev) => ({
+    setState((prev) => ({
       ...prev,
       experience: [
         ...prev.experience,
@@ -97,7 +97,7 @@ const ResumeBuilder = () => {
             <label>Full Name *</label>
             <input
               type="text"
-              value={resumeData.personalInfo.fullName}
+              value={state.personalInfo.fullName}
               onChange={(e) =>
                 handleInputChange("personalInfo", "fullName", e.target.value)
               }
@@ -109,7 +109,7 @@ const ResumeBuilder = () => {
             <label>Job Title</label>
             <input
               type="text"
-              value={resumeData.personalInfo.jobTitle}
+              value={state.personalInfo.jobTitle}
               onChange={(e) =>
                 handleInputChange("personalInfo", "jobTitle", e.target.value)
               }
@@ -122,7 +122,7 @@ const ResumeBuilder = () => {
               <label>Email *</label>
               <input
                 type="email"
-                value={resumeData.personalInfo.email}
+                value={stateonalInfo.email}
                 onChange={(e) =>
                   handleInputChange("personalInfo", "email", e.target.value)
                 }
@@ -134,7 +134,7 @@ const ResumeBuilder = () => {
               <label>Phone</label>
               <input
                 type="tel"
-                value={resumeData.personalInfo.phone}
+                value={statenfo.phone}
                 onChange={(e) =>
                   handleInputChange("personalInfo", "phone", e.target.value)
                 }
@@ -146,7 +146,7 @@ const ResumeBuilder = () => {
               <label>Location</label>
               <input
                 type="text"
-                value={resumeData.personalInfo.location}
+                value={stateonalInfo.location}
                 onChange={(e) =>
                   handleInputChange("personalInfo", "location", e.target.value)
                 }
@@ -158,7 +158,7 @@ const ResumeBuilder = () => {
               <label>LinkedIn</label>
               <input
                 type="url"
-                value={resumeData.personalInfo.linkedin}
+                value={stateonalInfo.linkedin}
                 onChange={(e) =>
                   handleInputChange("personalInfo", "linkedin", e.target.value)
                 }
@@ -170,7 +170,7 @@ const ResumeBuilder = () => {
               <label>Portfolio</label>
               <input
                 type="url"
-                value={resumeData.personalInfo.portfolio}
+                value={stateonalInfo.portfolio}
                 onChange={(e) =>
                   handleInputChange("personalInfo", "portfolio", e.target.value)
                 }
@@ -184,7 +184,7 @@ const ResumeBuilder = () => {
         <div className="builder-section">
           <h2>Professional Summary</h2>
           <textarea
-            value={resumeData.summary}
+            value={stateary}
             onChange={(e) => handleInputChange("summary", "", e.target.value)}
             placeholder="Brief overview of your professional background and key achievements..."
             rows="4"
@@ -200,16 +200,16 @@ const ResumeBuilder = () => {
             </button>
           </div>
 
-          {resumeData.experience.map((exp, index) => (
+          {staterience.map((exp, index) => (
             <div key={exp.id} className="experience-item">
               <input
                 type="text"
                 placeholder="Company Name"
                 value={exp.company}
                 onChange={(e) => {
-                  const newExperience = [...resumeData.experience];
+                  const newExperience = [...state.experience];
                   newExperience[index].company = e.target.value;
-                  setResumeData((prev) => ({
+                  setState((prev) => ({
                     ...prev,
                     experience: newExperience,
                   }));
@@ -220,12 +220,12 @@ const ResumeBuilder = () => {
                 placeholder="Position"
                 value={exp.position}
                 onChange={(e) => {
-                  const newExperience = [...resumeData.experience];
+                  const newExperience = [...staterience];
                   newExperience[index].position = e.target.value;
-                  setResumeData((prev) => ({
+                  setstate({
                     ...prev,
                     experience: newExperience,
-                  }));
+                  });
                 }}
               />
             </div>

@@ -6,7 +6,7 @@ const TemplatesPage = () => {
   const navigate = useNavigate();
 
   const handleUseTemplate = () => {
-    navigate("/builder/classic");
+    navigate("/builder");
   };
 
   return (
